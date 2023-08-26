@@ -26,6 +26,6 @@ I hope you find something valuable in this repository as I embark on my React le
 
 ### Connect with Me
 
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/hassanshahzadaheer/)
-- Twitter: [Your Twitter Handle]([https://twitter.com/yourhandle](https://twitter.com/hshahzadaheer))
-- Dev.to: [Your Dev.to Profile]([https://dev.to/yourprofile](https://dev.to/hassanshahzadaheer)https://dev.to/hassanshahzadaheer)
+- [LinkedIn](https://www.linkedin.com/in/hassanshahzadaheer/)
+- [Twitter]([https://twitter.com/yourhandle](https://twitter.com/hshahzadaheer))
+- [Dev.to](https://dev.to/hassanshahzadaheer)
