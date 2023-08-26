@@ -4,9 +4,9 @@ export default function Navbar (){
 
     return (
       <nav className="nav">
-        <img src="./logo.png" alt="logo" />
-        <h3>Fact for React</h3>
-        <h4>Project 1</h4>
+        <img src="./logo.png" alt="logo" className="nav--icon" />
+        <h3 className="nav--logo_text" >ReactFacts</h3>
+        <h4 className="nav--title">React Course - Project 1</h4>
       </nav>
     );
 }
