@@ -1,15 +1,18 @@
 import react from 'react';
 import  ReactDOM  from 'react-dom/client';
+import Header from './components/Header.js';
 import Main from './components/Main.js';
-
-import NavBar from './components/Navbar';
+import Footer from './components/Footer.js';
 function Page(){
 
   return (
-    <>
-    <NavBar/>
-    <Main/>
-    </>
+    <div className="container">
+      <div className='card'>
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    </div>
   );
 
 }

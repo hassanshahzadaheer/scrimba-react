@@ -6,54 +6,112 @@ body {
   margin: 0;
   font-family: Inter, sans-serif;
   height: 100vh;
-  background-color: #282D35;
+  background-color: #1c1c1c;
 }
-nav {
+.container {
+  margin: 6% auto;
+  background-color: #23252c;
+  padding: 100px;
+  width: 40%;
+}
+.card {
+  background-color: #1a1b21;
+}
+
+header > img {
+  width: 100%;
+}
+main {
+  background-color: #1a1b21;
+}
+.main--title {
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  margin: 0px;
+  line-height: normal;
+}
+.main--subtitle {
+  color: #f3bf99;
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 1px;
+}
+.bio > p {
+  color: #f5f5f5;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 1em;
+}
+.bio {
+  margin-top: 3%;
+}
+
+.follow-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.follow-buttons button {
   display: flex;
   align-items: center;
-  background-color: #21222A;
+  gap: 8px;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0 40px;
+  height: 35px;
+  line-height: 45px;
+  border-radius: 7px;
+  font-weight: 400;
+  font-size: 14px;
+  box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
+}
+
+.follow-button--linkedIn {
+  background: #5093e2;
+  color: #fff;
+}
+
+.content {
+  color: #dcdcdc;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 36px;
+}
+.content--heading {
+  color: #f5f5f5;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color:#161619;
   height: 90px;
   padding: 30px 25px;
 }
-.nav--logo_text,
-.nav--title {
-  margin: 0;
-}
 
-.nav--logo_text {
-  margin-right: auto;
-  color: #61DAFB;
-  font-weight: 700;
-  font-size: 22px;
-}
-
-.nav--title {
-  color: #DEEBF8;
-  font-weight: 600;
-}
-
-.nav--icon {
+.footer--icon {
   height: 30px;
   margin-right: 7px;
-}
-
-main {
-  padding: 57px 27px;
-  color: #ffff;
-}
-
-.main--title {
-  margin: 0;
-  font-size: 39px;
-  letter-spacing: -0.05em;
-}
-
-.main--facts {
-  margin-top: 46px;
-  max-width: 400px;
-}
-
-.main--facts>li {
-  line-height: 19px;
-  padding-block: 10px;
 }
