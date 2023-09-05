@@ -1,15 +1,25 @@
 import React from "react";
 import Card from "./Card";
-import CardData from "data";
-export default function Main() {
-  const cardData = CardData.map(
+
+export default function Main(getCardData) {
+
+  const data = getCardData.cardData.map(
     places => {
-      console.log(places);
+       <Card
+       img={places.imageUrl}
+        title={places.title}
+    location={places.location}
+    googleMapsUrl={places.googleMapUrl}
+    startDate={places.startDate}
+    endDate={places.endDate}
+    description={places.description}
+        />;
     }
   );
+
 return (
   <main>
-    <Card />
+   {data}
   </main>
 );
 }

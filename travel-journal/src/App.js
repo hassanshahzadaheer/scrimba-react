@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import NavBar from "./components/Navbar"
 import Main from "./components/Main"
+import CardData from "./data";
 
 function Pages(){
+  const data = CardData;
   return (
     <>
       <NavBar />
-      <Main/>
+      <Main cardData={data} />
     </>
   );
 }
