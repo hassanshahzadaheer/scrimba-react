@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import NavBar from "./components/Navbar"
 import Main from "./components/Main"
 
-
 function Pages(){
   return (
     <>
