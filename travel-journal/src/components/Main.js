@@ -3,25 +3,24 @@ import Card from "./Card";
 
 export default function Main(getCardData) {
 
-  const data = getCardData.cardData.map(
-    places => {
-       <Card
-       img={places.imageUrl}
+  const data = getCardData.cardData.map((places) => {
+    return (
+      <Card
+        key={places.id}
+        img={places.imageUrl}
         title={places.title}
-    location={places.location}
-    googleMapsUrl={places.googleMapUrl}
-    startDate={places.startDate}
-    endDate={places.endDate}
-    description={places.description}
-        />;
+        location={places.location}
+        googleMapsUrl={places.googleMapUrl}
+        startDate={places.startDate}
+        endDate={places.endDate}
+        description={places.description}
+      />
+    );
+  });
 
-    console.log(places);
-    }
+  return (
+    <main>
+      {data}
+    </main>
   );
-
-return (
-  <main>
-   {data}
-  </main>
-);
 }

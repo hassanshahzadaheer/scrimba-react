@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import NavBar from "./components/Navbar"
 import Main from "./components/Main"
 import CardData from "./data";
@@ -30,5 +30,5 @@ export default function App() {
   const rootElement = document.getElementById("root");
 
   // land to the earth
-  ReactDOM.render(jsxElement, rootElement);
+  ReactDOM.createRoot(rootElement).render(jsxElement);
 }
