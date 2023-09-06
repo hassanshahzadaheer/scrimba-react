@@ -14,6 +14,8 @@ export default function Main(getCardData) {
     endDate={places.endDate}
     description={places.description}
         />;
+
+    console.log(places);
     }
   );
 
