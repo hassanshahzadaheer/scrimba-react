@@ -8,14 +8,17 @@ body {
   box-sizing: border-box;
 }
 header {
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
- color: white;
- display: flex;
- align-items: center;
- padding: 8px;
+background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 8px;
 }
-
 .site--logo {
   height: 40px;
   margin-right: 15px;
+}
+.site--title {
+font-size: 1.25rem;
+  margin-right: auto;
 }
