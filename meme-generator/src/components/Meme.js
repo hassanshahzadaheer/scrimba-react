@@ -1,19 +1,51 @@
 import React  from "react";
-
+import memesData from "../memesData.js";
 export default function Meme (){
-    return (
-      <main>
-        <div className="controllers">
-          <input type="text" placeholder="Shut up" />
-          <input type="text" placeholder="and take my money" />
-        </div>
-        <button className="form--button" type="submit" value="">
-          Get a new meme image 🖼{" "}
-        </button>
+  /**
+   * Challenge: Get a random image from the `memesData` array
+   * when the "new meme image" button is clicked.
+   *
+   * Log the URL of the image to the console. (Don't worry
+   * about displaying the image yet)
+   */
 
-          <img className="meme--image" src="https://images.theconversation.com/files/38926/original/5cwx89t4-1389586191.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=926&fit=clip" />
-      </main>
-    );
+  function getRandomImages(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+let imageUrl;
+  const generateMeme = () => {
+    memesData.data.memes.map((data) => {
+
+       const imageIndex = getRandomImages(0, memesData.data.memes.length - 1);
+      imageUrl = memesData.data.memes[imageIndex].url;
+    });
 
 
+  };
+  console.log(imageUrl);
+  const overlay = () => {};
+
+  return (
+    <main>
+      <div className="controllers">
+        <input type="text" placeholder="Shut up" />
+        <input type="text" placeholder="and take my money" />
+      </div>
+      <button
+        className="form--button"
+        onClick={generateMeme}
+        type="submit"
+        value=""
+      >
+        Get a new meme image 🖼
+      </button>
+
+      <img
+        className="meme--image"
+        onMouseOver={overlay}
+        src={imageUrl}
+        alt="Meme"
+      />
+    </main>
+  );
 }
