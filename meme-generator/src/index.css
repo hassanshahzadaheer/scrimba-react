@@ -1,24 +1,80 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
+
 header {
-background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
   color: white;
   display: flex;
   align-items: center;
   padding: 8px;
 }
+
 .site--logo {
   height: 40px;
   margin-right: 15px;
 }
+
 .site--title {
-font-size: 1.25rem;
+  font-size: 1.25rem;
   margin-right: auto;
+}
+
+main {
+  background-color: aliceblue;
+  border: 2px red solid;
+  margin: 30px auto;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.controllers {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #D5D4D8;
+}
+
+.form--button {
+
+  margin-top: 15px;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0 56px;
+  height: 45px;
+  line-height: 45px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #711F8D 1.14%, #A818DA 100%);
+
+}
+
+.form--button:hover {
+  color: #000;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 20px rgb(93 93 93 / 23%);
+}
+
+.meme--image {
+  border-radius: 4px;
+  margin-top: 40px;
+  width: 100%;
+  height: auto;
 }
