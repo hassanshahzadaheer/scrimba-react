@@ -43,7 +43,7 @@ let imageUrl;
       <img
         className="meme--image"
         onMouseOver={overlay}
-        src={imageUrl}
+        src="https://media.gq.com.mx/photos/5be9c20dba170c07d7cfc9b3/master/w_1600%2Cc_limit/los_memes_te_estan_haciendo_gordo_2638.jpg"
         alt="Meme"
       />
     </main>
