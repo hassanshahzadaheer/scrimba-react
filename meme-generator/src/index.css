@@ -27,8 +27,6 @@ header {
 }
 
 main {
-  background-color: aliceblue;
-  border: 2px red solid;
   margin: 30px auto;
   width: 70%;
   display: flex;
