@@ -1,28 +1,25 @@
 import React  from "react";
 import memesData from "../memesData.js";
 export default function Meme (){
-  /**
-   * Challenge: Save the random meme URL in state
-   * - Create new state called `memeImage` with an
-   *   empty string as default
-   * - When the getMemeImage function is called, update
-   *   the `memeImage` state to be the random chosen
-   *   image URL
-   * - Below the div.form, add an <img /> and set the
-   *   src to the new `memeImage` state you created
-   */
 
   function getRandomImages(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  let imageUrl;
+
+
+  const [memeImage , setMemeImage] = React.useState("https://i.imgflip.com/30b1gx.jpg");
+
+
   const generateMeme = () => {
     memesData.data.memes.map((data) => {
       const imageIndex = getRandomImages(0, memesData.data.memes.length - 1);
-      imageUrl = memesData.data.memes[imageIndex].url;
+      let imageUrl = memesData.data.memes[imageIndex].url;
+
+      setMemeImage(imageUrl);
+
+
     });
   };
-  console.log(imageUrl);
   const overlay = () => {};
 
   return (
@@ -43,7 +40,7 @@ export default function Meme (){
       <img
         className="meme--image"
         onMouseOver={overlay}
-        src="https://media.gq.com.mx/photos/5be9c20dba170c07d7cfc9b3/master/w_1600%2Cc_limit/los_memes_te_estan_haciendo_gordo_2638.jpg"
+        src={memeImage}
         alt="Meme"
       />
     </main>
