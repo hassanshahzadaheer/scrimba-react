@@ -2,25 +2,25 @@ import React  from "react";
 import memesData from "../memesData.js";
 export default function Meme (){
   /**
-   * Challenge: Get a random image from the `memesData` array
-   * when the "new meme image" button is clicked.
-   *
-   * Log the URL of the image to the console. (Don't worry
-   * about displaying the image yet)
+   * Challenge: Save the random meme URL in state
+   * - Create new state called `memeImage` with an
+   *   empty string as default
+   * - When the getMemeImage function is called, update
+   *   the `memeImage` state to be the random chosen
+   *   image URL
+   * - Below the div.form, add an <img /> and set the
+   *   src to the new `memeImage` state you created
    */
 
   function getRandomImages(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-let imageUrl;
+  let imageUrl;
   const generateMeme = () => {
     memesData.data.memes.map((data) => {
-
-       const imageIndex = getRandomImages(0, memesData.data.memes.length - 1);
+      const imageIndex = getRandomImages(0, memesData.data.memes.length - 1);
       imageUrl = memesData.data.memes[imageIndex].url;
     });
-
-
   };
   console.log(imageUrl);
   const overlay = () => {};
