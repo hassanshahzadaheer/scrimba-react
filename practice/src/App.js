@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import  ReactDOM  from "react-dom/client";
 
-function App() {
+function Profile({person}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <h1>Your name is:  <span>{person.name}</span></h1>
+    <p><strong>Country:</strong> {person.country} </p>
+    </>
   );
 }
 
-export default App;
+
+function Pages () {
+  const person = {
+    name: "aheer",
+    country: "Pakistan",
+  };
+  return (
+    <>
+      <div className="container">
+        <div>
+          <button  >Add Item</button>
+        </div>
+
+        <Profile person={person}/>
+      </div>
+    </>
+  );
+}
+
+export default function App() {
+
+  const jsxElement = <Pages />
+  const root = document.getElementById('root');
+
+  ReactDOM.createRoot(root).render(jsxElement);
+}
